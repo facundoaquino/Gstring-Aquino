@@ -6,6 +6,11 @@
     align-items: center;
      justify-content:  space-between;
     padding: 8px;
+    border-bottom: 1px solid #e43f5a;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }
 .navbar__container{
     display: flex;
@@ -76,7 +81,8 @@ a{
 
 @media screen and (max-width:768px) {
     .navbar{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
     .navbar__listItem{
         display: none;
@@ -91,5 +97,7 @@ a{
         font-size: 24px;
        padding: 20px;
     }
-    
+    .navbar__search{
+        width: 100%;
+    }
 }

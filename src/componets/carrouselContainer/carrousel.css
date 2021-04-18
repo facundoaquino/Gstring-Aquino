@@ -1,0 +1,42 @@
+ 
+.carr__image {
+	object-fit: cover;
+	height: 900px;
+    filter: grayscale(100%);
+     
+}
+.carr__playerContainer {
+	position: absolute;
+	bottom: 55px;
+	right: 55px;
+	z-index: 200;
+	color: white;
+	font-size: 48px;
+}
+.carr__playerPlay{
+    font-size: 50px;
+    color: #e43f5a;
+    z-index: 1000;
+    cursor: pointer;
+} 
+.carr__playerPause{
+    font-size: 25px;
+    margin:  0 5px; 
+    cursor: pointer;
+} 
+
+
+.carr__subtitle{
+    display: inline;
+    color: #a7d129;
+    font-size: 32px;
+}
+.carr__playerContainer{
+    text-align: left;
+} 
+
+@media screen and (max-width:768px) {
+    .carr__image{
+        height: 400px;
+    }
+}
