@@ -1,7 +1,7 @@
  
 .carr__image {
-	object-fit: cover;
-	height: 900px;
+	object-fit: fill;
+	height: 600px;
     filter: grayscale(100%);
      
 }

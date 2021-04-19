@@ -17,7 +17,7 @@ const PlayerItem = ({ audio, artist }) => {
 			<p className="carr__legend">{artist}</p>
 
 			<i onClick={handlePlay} className="fas fa-play-circle carr__playerPlay"></i>
-			<i onClick={handlePause} class="far fa-pause-circle carr__playerPause"></i>
+			<i onClick={handlePause} className="far fa-pause-circle carr__playerPause"></i>
 			<p className="carr__subtitle">Prueba de sonido</p>
 
 			<audio className="carr__audio" src={audio}></audio>

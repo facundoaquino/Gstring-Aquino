@@ -10,10 +10,10 @@ class DemoCarousel extends Component {
 			<Carousel showThumbs={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={1000} onChange={()=>{
 				document.querySelectorAll('audio').forEach(audio=>{audio.pause() ; audio.currentTime =0})}}>
 				{carouselData.map((item, i) => (
-					<div>
+					<div key={i}>
 						<img alt={item.artist} src={item.image} className='carr__image' />
 						
-						<PlayerItem key={i} audio={item.audio} artist={item.artist}/>
+						<PlayerItem   audio={item.audio} artist={item.artist}/>
 					</div>
 				))}
 			</Carousel>

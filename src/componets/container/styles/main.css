@@ -1,0 +1,21 @@
+.main__container {
+    padding: 100px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* product card */
+
+.product__card {
+    cursor: pointer;
+	margin: 10px;
+    color: white;
+}
+
+.product__img {
+    width: 400px;
+    object-fit: cover;
+	height: 300px;
+}

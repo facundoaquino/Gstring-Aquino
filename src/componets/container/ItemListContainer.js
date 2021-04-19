@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getDataProducts } from '../../helpers/getDataProducts'
+import ItemList from './ItemList'
+import './styles/main.css'
+const ItemListContainer = ({ greeting }) => {
+	const [products, setProducts] = useState([])
 
-const ItemListContainer = ({greeting}) => {
-    return (
-        <div style={{fontSize:'100',textAlign:'center'}}>
-           {greeting}
-        </div>
-    )
+	useEffect(() => {
+		getDataProducts.then(res=>setProducts(res))
+	}, [])
+    console.log(products);
+	return (
+		<main className="main__container">
+			 <ItemList products={products}/>
+		</main>
+	)
 }
 
 export default ItemListContainer
