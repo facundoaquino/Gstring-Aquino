@@ -7,77 +7,88 @@ const products =[
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:10
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:0
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:5
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:10
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:0
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:10
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:0
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:7
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:10
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:10
     },
     {
         id: Date.now(),
         title:'guitar',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato
+        pictureUrl:strato,
+        stock:2
     },
 
 ]

@@ -6,12 +6,12 @@ const ItemListContainer = ({ greeting }) => {
 	const [products, setProducts] = useState([])
 
 	useEffect(() => {
-		getDataProducts.then(res=>setProducts(res))
+		getDataProducts.then((res) => setProducts(res))
 	}, [])
-    console.log(products);
+
 	return (
 		<main className="main__container">
-			 <ItemList products={products}/>
+			<ItemList products={products} />
 		</main>
 	)
 }

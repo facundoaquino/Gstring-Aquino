@@ -9,3 +9,10 @@ body {
 	overflow-x: hidden;
 	background-color: black;
 }
+
+
+button{
+	border: none;
+	outline: none;
+	padding: 5px;
+}
