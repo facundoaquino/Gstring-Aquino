@@ -1,21 +1,35 @@
 {
   "files": {
-    "main.css": "/Gstring-Aquino/static/css/main.ec11795d.chunk.css",
-    "main.js": "/Gstring-Aquino/static/js/main.cef1cede.chunk.js",
-    "main.js.map": "/Gstring-Aquino/static/js/main.cef1cede.chunk.js.map",
+    "main.css": "/Gstring-Aquino/static/css/main.c0749795.chunk.css",
+    "main.js": "/Gstring-Aquino/static/js/main.15f3c9d7.chunk.js",
+    "main.js.map": "/Gstring-Aquino/static/js/main.15f3c9d7.chunk.js.map",
     "runtime-main.js": "/Gstring-Aquino/static/js/runtime-main.44fff648.js",
     "runtime-main.js.map": "/Gstring-Aquino/static/js/runtime-main.44fff648.js.map",
-    "static/js/2.407876ea.chunk.js": "/Gstring-Aquino/static/js/2.407876ea.chunk.js",
-    "static/js/2.407876ea.chunk.js.map": "/Gstring-Aquino/static/js/2.407876ea.chunk.js.map",
+    "static/css/2.6b560088.chunk.css": "/Gstring-Aquino/static/css/2.6b560088.chunk.css",
+    "static/js/2.e1d0f8e6.chunk.js": "/Gstring-Aquino/static/js/2.e1d0f8e6.chunk.js",
+    "static/js/2.e1d0f8e6.chunk.js.map": "/Gstring-Aquino/static/js/2.e1d0f8e6.chunk.js.map",
     "index.html": "/Gstring-Aquino/index.html",
-    "static/css/main.ec11795d.chunk.css.map": "/Gstring-Aquino/static/css/main.ec11795d.chunk.css.map",
-    "static/js/2.407876ea.chunk.js.LICENSE.txt": "/Gstring-Aquino/static/js/2.407876ea.chunk.js.LICENSE.txt",
-    "static/media/guitar.9957837d.png": "/Gstring-Aquino/static/media/guitar.9957837d.png"
+    "static/css/2.6b560088.chunk.css.map": "/Gstring-Aquino/static/css/2.6b560088.chunk.css.map",
+    "static/css/main.c0749795.chunk.css.map": "/Gstring-Aquino/static/css/main.c0749795.chunk.css.map",
+    "static/js/2.e1d0f8e6.chunk.js.LICENSE.txt": "/Gstring-Aquino/static/js/2.e1d0f8e6.chunk.js.LICENSE.txt",
+    "static/media/eric.895e1abc.jpg": "/Gstring-Aquino/static/media/eric.895e1abc.jpg",
+    "static/media/eric.f188a84b.mp3": "/Gstring-Aquino/static/media/eric.f188a84b.mp3",
+    "static/media/guitar.9957837d.png": "/Gstring-Aquino/static/media/guitar.9957837d.png",
+    "static/media/jimmy.aab72f6e.ogg": "/Gstring-Aquino/static/media/jimmy.aab72f6e.ogg",
+    "static/media/jimmy.cb484ac8.jpg": "/Gstring-Aquino/static/media/jimmy.cb484ac8.jpg",
+    "static/media/joe.e4abe6b0.jpg": "/Gstring-Aquino/static/media/joe.e4abe6b0.jpg",
+    "static/media/joe.ebaf880a.mp3": "/Gstring-Aquino/static/media/joe.ebaf880a.mp3",
+    "static/media/mollo.44176207.ogg": "/Gstring-Aquino/static/media/mollo.44176207.ogg",
+    "static/media/mollo.4761a07e.jpg": "/Gstring-Aquino/static/media/mollo.4761a07e.jpg",
+    "static/media/srv.2594c00c.mp3": "/Gstring-Aquino/static/media/srv.2594c00c.mp3",
+    "static/media/srv.dc4bd20a.jpg": "/Gstring-Aquino/static/media/srv.dc4bd20a.jpg",
+    "static/media/strato.013c25f2.jpg": "/Gstring-Aquino/static/media/strato.013c25f2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.44fff648.js",
-    "static/js/2.407876ea.chunk.js",
-    "static/css/main.ec11795d.chunk.css",
-    "static/js/main.cef1cede.chunk.js"
+    "static/css/2.6b560088.chunk.css",
+    "static/js/2.e1d0f8e6.chunk.js",
+    "static/css/main.c0749795.chunk.css",
+    "static/js/main.15f3c9d7.chunk.js"
   ]
 }
