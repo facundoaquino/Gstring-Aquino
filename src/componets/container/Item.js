@@ -1,21 +1,20 @@
 import React from 'react'
 import ItemCount from './ItemCount'
-
-const Item = ({ title, description, price, pictureUrl, stock }) => {
-
-    
-
-
+import { useSpring, animated } from 'react-spring'
+const Item = ({ title, description, price, pictureUrl, stock, style }) => {
+	const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } ,config:{duration:3000} })
 	return (
-		<div className="product__card">
-			<img className="product__img" src={pictureUrl} alt="" />
-			<p>{title}</p>
-			<p>${price}</p>
-			<p>{description}</p>
-			<p><span>Stock: </span>{stock}</p>
-			<ItemCount stock={stock} initial={1} />
+		<animated.div style={props} className={`product__card ${style}`}>
+			<div className="product__imgContainer">
+				<img className="product__img" src={pictureUrl} alt="" />
+			</div>
+			<div className='product_descriptionContainer'>
+				<p className='product__title'>{title}</p>
+				<p  className='product__price'>${price}</p>
+			</div>
+			<ItemCount stock={stock} initial={1} product={title} />
 			{!stock && <p className="product__noStock">SIN STOCK</p>}
-		</div>
+		</animated.div>
 	)
 }
 

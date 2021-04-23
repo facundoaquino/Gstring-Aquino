@@ -1,26 +1,33 @@
 
 import strato from './../assets/images/strato.jpg'
+import pua from './../assets/images/pua.webp'
+import ampli from './../assets/images/ampli.jpg'
+import gib from './../assets/images/gib.jpg'
+import gibacustic from './../assets/images/gibacustic.jpg'
 
 const products =[
     {
         id: Date.now(),
-        title:'guitar',
-        description:'stratocaster',
+        title:'Gibson LesPaul',
+        category:'guitar',
+        description:'Gibson LesPaul',
         price:19999,
-        pictureUrl:strato,
+        pictureUrl:gib,
         stock:10
     },
     {
+       
         id: Date.now(),
-        title:'guitar',
-        description:'stratocaster',
-        price:19999,
-        pictureUrl:strato,
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
         stock:0
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,
@@ -28,39 +35,78 @@ const products =[
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'ampli',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato,
-        stock:10
+        pictureUrl:ampli,
+        stock:5
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'Gibson Acustic J-45 ',
+        description:'stratocaster',
+        category:'guitar',
+        price:19999,
+        pictureUrl:gibacustic,
+        stock:5
+    },
+    {
+        id: Date.now(),
+        title:'Fender Stratocaster',
+        category:'guitar',
+        description:'stratocaster',
+        price:19999,
+        pictureUrl:strato,
+        stock:5
+    },
+    {
+        id: Date.now(),
+        title:'Fender Stratocaster',
+        category:'guitar',
+        description:'stratocaster',
+        price:19999,
+        pictureUrl:strato,
+        stock:5
+    },
+    {
+        id: Date.now(),
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,
         stock:0
     },
     {
+      
         id: Date.now(),
-        title:'guitar',
-        description:'stratocaster',
-        price:19999,
-        pictureUrl:strato,
-        stock:10
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
+        stock:3
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'ampli',
         description:'stratocaster',
         price:19999,
-        pictureUrl:strato,
-        stock:0
+        pictureUrl:ampli,
+        stock:2
+    },
+    {
+       
+        id: Date.now(),
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
+        stock:3
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,
@@ -68,23 +114,60 @@ const products =[
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,
-        stock:10
+        stock:0
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
+        stock:3
+    },
+    {
+        
+        id: Date.now(),
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
+        stock:3
+    },
+    {
+        id: Date.now(),
+        title:'ampli',
+        description:'stratocaster',
+        price:19999,
+        pictureUrl:ampli,
+        stock:9
+    },
+    {
+     
+        id: Date.now(),
+        title:'pua',
+        description:'ernie ball',
+        price:500,
+        pictureUrl:pua,
+        stock:3
+    },
+    {
+        id: Date.now(),
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,
-        stock:10
+        stock:2
     },
     {
         id: Date.now(),
-        title:'guitar',
+        title:'Fender Stratocaster',
+        category:'guitar',
         description:'stratocaster',
         price:19999,
         pictureUrl:strato,

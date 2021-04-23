@@ -7,7 +7,7 @@ import PlayerItem from './PlayerItem'
 class DemoCarousel extends Component {
 	render() {
 		return (
-			<Carousel showThumbs={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={1000} onChange={()=>{
+			<Carousel  showThumbs={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={1000} onChange={()=>{
 				document.querySelectorAll('audio').forEach(audio=>{audio.pause() ; audio.currentTime =0})}}>
 				{carouselData.map((item, i) => (
 					<div key={i}>

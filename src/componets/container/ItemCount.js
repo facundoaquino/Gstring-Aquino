@@ -1,14 +1,29 @@
 import React, { useEffect, useState } from 'react'
+import { Notyf } from 'notyf'
+import 'notyf/notyf.min.css'
 
-const ItemCount = ({ stock, initial }) => {
+const ItemCount = ({ stock, initial, product }) => {
+	// Display an error notification
 	const [addProduct, setAddProduct] = useState(initial)
 
 	const onAdd = (incremet = 1) => {
+		if ((addProduct === stock) && (stock !== 0)) {
+			const notyf = new Notyf()
+			notyf.error({
+				message: `Lo sentimos maximo stock para ${product}`,
+				dismissible: true,
+				duration: 3000,
+				backgroundColor: '#e43f5f',
+				icon: false,
+			})
+		}
 		if (stock) setAddProduct(addProduct + incremet)
 	}
 	useEffect(() => {
 		if (addProduct < 1 && stock) setAddProduct(1)
-		if (addProduct > stock) setAddProduct(stock)
+		if (addProduct > stock) {
+			setAddProduct(stock)
+		}
 	}, [addProduct, stock, setAddProduct])
 
 	return (
