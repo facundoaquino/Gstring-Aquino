@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 8px;
+	padding: 0 8px;
 	border-bottom: 1px solid #e43f5a;
 	position: sticky;
 	right: 0;
@@ -14,11 +14,16 @@
 .navbar__container {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .navbar__logo {
 	/* width: 100px; */
 	height: 100px;
+	left: 0;
+	transform: rotate(90deg);
+	position: absolute;
+	top: -10px;
 }
  
 .navbar__listItem {
@@ -33,6 +38,7 @@
 	margin: 0 6px;
 	padding: 5px;
 	position: relative;
+	font-size: 14px;
 }
 a {
 	text-decoration: none;
@@ -46,7 +52,7 @@ a {
 	border: 1px solid #e43f5a;
 	background-color: transparent;
 	justify-self: flex-end;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .navbar__form {

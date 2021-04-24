@@ -7,8 +7,8 @@ import pauseAudio from '../../helpers/pauseAudio'
 
 const Navabar = () => {
     const handlePlayer=()=>{
-        document.querySelector('.carr__display').classList.add('d-none')
-        document.querySelector('.carr__chevron-icon').classList.remove('r-180')
+        document.querySelector('.carr__display')?.classList.add('d-none')
+        document.querySelector('.carr__chevron-icon')?.classList.remove('r-180')
        pauseAudio()
     }
 	return (

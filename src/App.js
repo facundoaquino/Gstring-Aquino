@@ -4,19 +4,24 @@ import ItemListContainer from './componets/container/ItemListContainer'
 import Navabar from './componets/Navbar/Navabar'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ItemDetailContainer from './componets/ItemDetail/ItemDetailContainer'
 
 function App() {
 	return (
 		<>
 			<Router>
 				<Navabar />
-				<DemoCarousel />
 				<Switch>
-					<Route exact path='/'>
-						<ItemListContainer   />
+					<Route exact path="/">
+						<DemoCarousel />
+						<ItemListContainer />
 					</Route>
-					<Route path='/category/:categoryId'>
-						<ItemListContainer   />
+					<Route path="/category/:categoryId">
+						<DemoCarousel />
+						<ItemListContainer />
+					</Route>
+					<Route path="/item/:itemId">
+						<ItemDetailContainer />
 					</Route>
 				</Switch>
 			</Router>
