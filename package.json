@@ -16,9 +16,7 @@
 		"react-spring": "^9.1.1",
 		"web-vitals": "^1.1.1"
 	},
-	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+	"scripts": {		 
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

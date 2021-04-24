@@ -4,12 +4,13 @@ import { Carousel } from 'react-responsive-carousel'
 import './carrousel.css'
 import { carouselData } from './data'
 import PlayerItem from './PlayerItem'
+import pauseAudio from '../../helpers/pauseAudio'
 class DemoCarousel extends Component {
 	handleDisplay(e) {
 		const element = document.querySelector('.carr__display')
 		element.classList.toggle('d-none')
 		e.target.classList.toggle('r-180')
-		document.querySelectorAll('audio').forEach((audio) => audio.pause())
+		pauseAudio()
 	}
 	render() {
 		return (
