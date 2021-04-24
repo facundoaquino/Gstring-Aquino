@@ -7,7 +7,7 @@ const ItemCount = ({ stock, initial, product }) => {
 	const [addProduct, setAddProduct] = useState(initial)
 
 	const onAdd = (incremet = 1) => {
-		if ((addProduct === stock) && (stock !== 0)) {
+		if ((addProduct === stock) && (stock !== 0) &&(incremet!==-1)) {
 			const notyf = new Notyf()
 			notyf.error({
 				message: `Lo sentimos maximo stock para ${product}`,

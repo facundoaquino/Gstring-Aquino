@@ -18,8 +18,9 @@ const products =[
     {
        
         id: Date.now(),
-        title:'pua',
+        title:'pua',         
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:0
@@ -36,6 +37,7 @@ const products =[
     {
         id: Date.now(),
         title:'ampli',
+        category:'amplificadores',
         description:'stratocaster',
         price:19999,
         pictureUrl:ampli,
@@ -82,6 +84,7 @@ const products =[
         id: Date.now(),
         title:'pua',
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:3
@@ -89,6 +92,7 @@ const products =[
     {
         id: Date.now(),
         title:'ampli',
+        category:'amplificadores',
         description:'stratocaster',
         price:19999,
         pictureUrl:ampli,
@@ -99,6 +103,7 @@ const products =[
         id: Date.now(),
         title:'pua',
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:3
@@ -125,6 +130,7 @@ const products =[
         id: Date.now(),
         title:'pua',
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:3
@@ -134,6 +140,7 @@ const products =[
         id: Date.now(),
         title:'pua',
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:3
@@ -141,6 +148,7 @@ const products =[
     {
         id: Date.now(),
         title:'ampli',
+        category:'amplificadores',
         description:'stratocaster',
         price:19999,
         pictureUrl:ampli,
@@ -151,6 +159,7 @@ const products =[
         id: Date.now(),
         title:'pua',
         description:'ernie ball',
+        category:'accesorios',
         price:500,
         pictureUrl:pua,
         stock:3
@@ -172,6 +181,15 @@ const products =[
         price:19999,
         pictureUrl:strato,
         stock:2
+    },
+    {
+        id: Date.now(),
+        title:'ampli',
+        category:'amplificadores',
+        description:'stratocaster',
+        price:19999,
+        pictureUrl:ampli,
+        stock:9
     },
 
 ]

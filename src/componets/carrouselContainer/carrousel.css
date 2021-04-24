@@ -1,10 +1,25 @@
  
 .carr__image {
-	object-fit: fill;
+	object-fit: contain;
 	height: 600px;
     filter: grayscale(100%);
      
 }
+.carr__display{
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 1;
+
+}
+.carr__display.d-none{
+    position: absolute;
+    opacity: 0;
+    transform:translateY(-100%);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 .carr__playerContainer {
 	position: absolute;
 	bottom: 55px;
@@ -34,7 +49,21 @@
 .carr__playerContainer{
     text-align: left;
 } 
-
+.carr__chevron{
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+.carr__chevron-icon{
+    transition: transform 1s ;
+    cursor:pointer
+}
+.carr__chevron-icon.r-180{
+    transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1);
+    transform: rotate(180deg);
+}
 @media screen and (max-width:768px) {
     .carr__image{
         height: 400px;

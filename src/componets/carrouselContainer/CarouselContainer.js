@@ -5,18 +5,41 @@ import './carrousel.css'
 import { carouselData } from './data'
 import PlayerItem from './PlayerItem'
 class DemoCarousel extends Component {
+	handleDisplay(e) {
+		const element = document.querySelector('.carr__display')
+		element.classList.toggle('d-none')
+		e.target.classList.toggle('r-180')
+		document.querySelectorAll('audio').forEach((audio) => audio.pause())
+	}
 	render() {
 		return (
-			<Carousel  showThumbs={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={1000} onChange={()=>{
-				document.querySelectorAll('audio').forEach(audio=>{audio.pause() ; audio.currentTime =0})}}>
-				{carouselData.map((item, i) => (
-					<div key={i}>
-						<img alt={item.artist} src={item.image} className='carr__image' />
-						
-						<PlayerItem   audio={item.audio} artist={item.artist}/>
-					</div>
-				))}
-			</Carousel>
+			<>
+				<Carousel
+					className="carr__display d-none"
+					showThumbs={false}
+					autoPlay={false}
+					infiniteLoop={true}
+					transitionTime={1000}
+					showIndicators={false}
+					onChange={() => {
+						document.querySelectorAll('audio').forEach((audio) => {
+							audio.pause()
+							audio.currentTime = 0
+						})
+					}}
+				>
+					{carouselData.map((item, i) => (
+						<div key={i}>
+							<img alt={item.artist} src={item.image} className="carr__image" />
+
+							<PlayerItem audio={item.audio} artist={item.artist} />
+						</div>
+					))}
+				</Carousel>
+				<h3 className="carr__chevron">
+					Prueba de sonido <i onClick={this.handleDisplay} className="carr__chevron-icon fas fa-chevron-down"></i>
+				</h3>
+			</>
 		)
 	}
 }

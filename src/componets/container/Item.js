@@ -2,7 +2,7 @@ import React from 'react'
 import ItemCount from './ItemCount'
 import { useSpring, animated } from 'react-spring'
 const Item = ({ title, description, price, pictureUrl, stock, style }) => {
-	const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } ,config:{duration:3000} })
+	const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } ,config:{duration:500} })
 	return (
 		<animated.div style={props} className={`product__card ${style}`}>
 			<div className="product__imgContainer">

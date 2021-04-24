@@ -1,9 +1,8 @@
-
-
 import React from 'react'
 import CartWidget from './CartWidget'
 import './Navbar.css'
-import logo from '../../assets/images/guitar.png'
+import logo from '../../assets/images/logo.svg'
+import { NavLink } from 'react-router-dom'
 
 const Navabar = () => {
 
@@ -14,14 +13,14 @@ const Navabar = () => {
         <nav className='navbar'>
             <div className='navbar__container'>
                 <img className='navbar__logo' src={logo} alt="logo gtring"/>  
-                <h1>Gtring</h1>
+                <h1 className='navbar__title'>Gtring</h1>
             </div>
             <i className="fas fa-bars navbar__menu"></i>
             <ul className="navbar__listItem">
-
-                <a href='/'><li className="navbar__item">Fender</li></a>
-                <a href='/'><li className="navbar__item">Otras</li></a>
-                <a href='/'><li className="navbar__item ">Gibson</li></a>
+            <NavLink activeClassName='navbar__active' to={'/category/guitar'}><li className="navbar__item">Guitarras</li></NavLink>
+            <NavLink activeClassName='navbar__active' to={'/category/amplificadores'}><li className="navbar__item">Amplificadores</li></NavLink>
+            <NavLink activeClassName='navbar__active'  to={'/category/accesorios'}><li className="navbar__item">Accesorios</li></NavLink>
+                
             </ul>
             <form className='navbar__form'>
                 
