@@ -34,6 +34,17 @@
 .details__price::before{
     content: '$';
 }
+.detail__colorsContainer{
+	display: flex;
+	
+}
+.detail__color{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 0 10px ;
+}
 
 @media screen and (max-width:1024px){
     .productDetail__container{

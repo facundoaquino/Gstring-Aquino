@@ -1,5 +1,6 @@
 
 import strato from './../assets/images/strato.jpg'
+import strato2 from './../assets/images/strato2.jpg'
 import pua from './../assets/images/pua.webp'
 import ampli from './../assets/images/ampli.jpg'
 import gib from './../assets/images/gib.jpg'
@@ -32,7 +33,7 @@ const products =[
         category:'guitar',
         description:'La serie American Ultra de guitarras y bajos es la más avanzada para músicos exigentes que exigen lo último en precisión, rendimiento y tono. La American Ultra Stratocaster presenta un exclusivo perfil de mástil de " D moderna” con bordes de diapasón redondeados para horas de comodidad, y la forma del talón del mástil permite un fácil acceso al registro más alto. Un veloz diapasón de radio compuesto de 10 "a 14" con 22 trastes medium jumbo para solos precisos y sin esfuerzo, mientras que las pastillas Ultra Noiseless ™ y las opciones avanzadas de cableado brindan infinitas posibilidades de sonido: sin zumbidos. Este versátil instrumento de última generación te inspirará a llevar tu interpretación a nuevas alturas. Otras características incluyen clavijeros de bloqueo sellados, herrajes cromados y cejilla de hueso. Incluye estuche rígido moldeado de primera calidad.',
         price:19999,
-        pictureUrl:strato,
+        pictureUrl:[{url:strato,color:'black' },{url:strato2,color:'#00B2D2'}],
         stock:5
     },
     {
