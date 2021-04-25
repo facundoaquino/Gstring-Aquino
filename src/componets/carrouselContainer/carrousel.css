@@ -68,4 +68,23 @@
     .carr__image{
         height: 400px;
     }
+    .carr__chevron{
+        font-size: 14px;
+    }
+    .carr__legend{
+        font-size: 16px;
+    }
+    .carr__playerContainer{
+        /* display: flex; */
+       /* left: 50%; */
+       right: 50px;
+       bottom: 0;
+       font-size: initial;
+    }
+    .carr__playerPlay{
+        font-size: 30px;
+    }
+    .carr__playerPause{
+        font-size: 20px;
+    }
 }

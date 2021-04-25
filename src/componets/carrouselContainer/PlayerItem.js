@@ -3,6 +3,7 @@ import './carrousel.css'
 
 const PlayerItem = ({ audio, artist ,guitar}) => {
 	const handlePlay = (e) => {
+		e.stopPropagation()
 		const audioPlayer = e.target.parentNode.querySelector('audio')
 		audioPlayer.play()
 	}

@@ -53,3 +53,11 @@
         justify-content: center;
     }
 }
+@media screen and (max-width:768px){
+    .productDetail__container{
+        padding: 10px;
+    }
+	.detail__image{
+		width: 100%;
+	}
+}

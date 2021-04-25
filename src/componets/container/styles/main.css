@@ -101,10 +101,18 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	max-height:250px
 }
 .loading__svg--svg {
 	
 	/* fill: #e43f5a48; */
 	 
 	transition: all 2s ease-in;
+}
+
+@media screen and (max-width:768px){
+	.main__container{
+		margin-top: 20px;
+		padding: 10px;
+	}
 }

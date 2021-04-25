@@ -19,6 +19,7 @@ class DemoCarousel extends Component {
 					className="carr__display d-none"
 					showThumbs={false}
 					autoPlay={false}
+					interval={30000}
 					infiniteLoop={true}
 					transitionTime={1000}
 					showIndicators={false}

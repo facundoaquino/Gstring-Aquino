@@ -3,7 +3,7 @@ import './../container/styles/itemDetail.css'
 
 import ReactImageZoom from 'react-image-zoom'
 import Colors from './Colors'
-const ItemDetail = ({ pictureUrl, title, description, price }) => {
+const ItemDetail = ({ pictureUrl, title, description, price ,category }) => {
 	const [actualImage, setActualImage] = useState(typeof pictureUrl == 'object' ? pictureUrl[0].url : pictureUrl)
 
 	const props = {
@@ -18,8 +18,11 @@ const ItemDetail = ({ pictureUrl, title, description, price }) => {
 	return (
 		<div className="productDetail__container">
 			<div className="productDetail__image">
-				{/* <img className="detail__image" src={pictureUrl} alt="" /> */}
-				<ReactImageZoom {...props} />
+				{window.innerWidth <= 768 || category !== 'guitar' ? (
+					<img className="detail__image" src={pictureUrl} alt="" />
+				) : (
+					<ReactImageZoom {...props} />
+				)}
 			</div>
 			<div className="details__container">
 				<h2 className="details__title">{title}</h2>
