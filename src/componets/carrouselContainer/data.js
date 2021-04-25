@@ -15,25 +15,30 @@ export const carouselData = [
 		image: srv,
 		artist: 'Stevie Ray Vaughan',
 		audio: srvAudio,
+		guitar:'American Stratocaster'
 	},
 	{
 		image: jimmy,
 		artist: 'Jimmi Page',
 		audio: jimmyAudio,
+		guitar:'Fender Telecaster'
 	},
 	{
 		image: mollo,
 		artist: 'Ricardo Mollo',
 		audio: molloAudio,
+		guitar:'Gibson Sg'
 	},
 	{
 		image: eric,
 		artist: 'Eric Clapton',
 		audio: ericAudio,
+		guitar:'American Stratocaster'
 	},
 	{
 		image: joe,
 		artist: 'Joe Satriani',
 		audio: joeAudio,
+		guitar:'Ibanez Js100'
 	},
 ]

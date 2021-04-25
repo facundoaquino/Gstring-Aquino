@@ -17,7 +17,7 @@ const ItemListContainer = () => {
 		getDataProducts(categoryId).then((res) => setData({ products: res, loading: false }))
 	}, [categoryId])
 	console.log('que onda')
-	return <main className="main__container">{loading ? <Loading /> : <ItemList products={products} />}</main>
+	return <main className="main__container">{loading ? <Loading  /> : <ItemList products={products} />}</main>
 }
 
 export default ItemListContainer

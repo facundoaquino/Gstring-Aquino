@@ -33,7 +33,7 @@ class DemoCarousel extends Component {
 						<div key={i}>
 							<img alt={item.artist} src={item.image} className="carr__image" />
 
-							<PlayerItem audio={item.audio} artist={item.artist} />
+							<PlayerItem {...item} />
 						</div>
 					))}
 				</Carousel>

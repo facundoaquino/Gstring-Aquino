@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import getItem from '../../helpers/getItem'
+import Loading from '../container/Loading'
 import ItemDetail from './ItemDetail'
 
 const ItemDetailContainer = () => {
-	const [product, setProduct] = useState({})
+	const [data, setProduct] = useState({ product: [], loading: true })
+	const { product, loading } = data
 	const { itemId } = useParams()
 	console.log(itemId)
 	useEffect(() => {
-		getItem(itemId)
-        .then(res=>setProduct(res))
+		setProduct({ ...product, loading: true })
+		getItem(itemId).then((res) => setProduct({ product: res, loading: false }))
 	}, [itemId])
-	return (
-		<>
-			<ItemDetail {...product} />
-		</>
-	)
+	return <>{loading ? <Loading  product='producto'/> : <ItemDetail {...product} />}</>
 }
 
 export default ItemDetailContainer

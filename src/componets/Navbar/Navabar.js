@@ -5,6 +5,8 @@ import logo from '../../assets/images/logo.svg'
 import { NavLink } from 'react-router-dom'
 import pauseAudio from '../../helpers/pauseAudio'
 
+
+
 const Navabar = () => {
     const handlePlayer=()=>{
         document.querySelector('.carr__display')?.classList.add('d-none')

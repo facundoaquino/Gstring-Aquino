@@ -42,9 +42,9 @@
 
 
 .carr__subtitle{
-    display: inline;
-    color: #a7d129;
-    font-size: 32px;
+     
+    color:rgb(238, 198, 198);
+    font-size: 16px;
 }
 .carr__playerContainer{
     text-align: left;
