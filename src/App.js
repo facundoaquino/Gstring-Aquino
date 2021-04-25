@@ -20,7 +20,7 @@ function App() {
 						<DemoCarousel />
 						<ItemListContainer />
 					</Route>
-					<Route path="/item/:itemId">
+					<Route   path="/item/:itemId">
 						<ItemDetailContainer />
 					</Route>
 				</Switch>

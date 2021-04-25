@@ -1,14 +1,16 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import { useSpring, animated } from 'react-spring'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import closeMenu from '../../helpers/closeMenu'
 const Item = ({ title, price, pictureUrl, stock, style, id }) => {
 	const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, config: { duration: 500 } })
+	const { pathname } = useLocation()
+	// console.log(id)
 	return (
 		<animated.div style={props} className={`product__card ${style}`}>
 			<div className="product__imgContainer">
-				<Link to={`/item/${id}`} onClick={closeMenu} >
+				<Link to={stock ? `/item/${id}` : pathname} onClick={closeMenu}>
 					<img className="product__img" src={pictureUrl} alt="" />
 				</Link>
 			</div>

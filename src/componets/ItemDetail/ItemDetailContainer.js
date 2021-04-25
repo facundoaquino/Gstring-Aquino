@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
 		setProduct({ loading: true })
 		getItem(itemId).then((res) => setProduct({ product: res, loading: false }))
 	}, [itemId])
-	return <>{loading ? <Loading  product='producto'/> : <ItemDetail {...product} />}</>
+	return <>{loading ? <Loading product="producto" /> : <ItemDetail {...product} />}</>
 }
 
 export default ItemDetailContainer
