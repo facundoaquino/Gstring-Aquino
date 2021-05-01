@@ -1,5 +1,5 @@
 .navbar {
-	background-color: #200f21;
+	background-color: black;
 	color: white;
 	display: flex;
 	align-items: center;
@@ -11,6 +11,7 @@
 	top: 0;
 	z-index: 100;
 }
+
 .navbar__container {
 	display: flex;
 	align-items: center;
@@ -25,7 +26,7 @@
 	position: absolute;
 	top: -10px;
 }
- 
+
 .navbar__listItem {
 	list-style: none;
 	width: 100%;
@@ -66,7 +67,7 @@ a {
 	transform: translateY(-50%);
 	color: rgba(238, 181, 181, 0.603);
 	z-index: 100;
-	background-color: #200f21;
+	background-color: black;
 }
 
 .navbar__icon-search::before {
@@ -95,16 +96,16 @@ a {
 	bottom: 0;
 	position: absolute;
 
-	animation: toRight 2s forwards cubic-bezier(0.23, 1, 0.320, 1)  ;
+	animation: toRight 2s forwards cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @keyframes toRight {
 	0% {
-        right: 100%;
+		right: 100%;
 	}
 	100% {
-        left: 0;
-        bottom: 0;
+		left: 0;
+		bottom: 0;
 		right: 0;
 	}
 }
@@ -114,20 +115,18 @@ a {
 @media screen and (max-width: 768px) {
 	.navbar {
 		/* flex-direction: column; */
-		 
+
 		flex-wrap: wrap;
 		/* position: initial; */
 		min-height: 50px;
-	 
 	}
-	.navbar__title{
+	.navbar__title {
 		display: none;
 	}
-	.navbar--none{
+	.navbar--none {
 		display: none;
 	}
 	.navbar__listItem {
-		 
 		flex-direction: column;
 		align-items: center;
 	}
@@ -135,7 +134,7 @@ a {
 		/* padding: 20px; */
 		font-size: 12px;
 	}
-	.navbar__logo{
+	.navbar__logo {
 		display: block;
 		margin: 0 auto;
 		/* position: relative; */
@@ -144,25 +143,23 @@ a {
 		padding: 0;
 		transform: translateY(-90%);
 		top: 0;
-
 	}
 	.navbar__menu {
 		position: absolute;
 		left: 8px;
-		top:  8px; 
+		top: 8px;
 		display: initial;
 		font-size: 24px;
-		 
 	}
-	.navbar__form{
+	.navbar__form {
 		margin: 5px 0;
 		width: 100%;
 	}
 	.navbar__search {
-		 font-size: 12px;
+		font-size: 12px;
 		width: 100%;
 	}
-	.navbar__icon-search{
+	.navbar__icon-search {
 		font-size: 16px;
 	}
 	/* .navbar__container{
@@ -170,12 +167,12 @@ a {
 		left: 0;
 		top: 0;
 	} */
-	.navbar__cart{
+	.navbar__cart {
 		position: absolute;
 		right: 8px;
 		padding: 0;
 		top: 8px;
-		 /* left: 50%;
+		/* left: 50%;
 		 transform: translateX(-50%); */
 	}
 }

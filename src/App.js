@@ -5,6 +5,7 @@ import Navabar from './componets/Navbar/Navabar'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ItemDetailContainer from './componets/ItemDetail/ItemDetailContainer'
+import Banner from './componets/banner/Banner'
 
 function App() {
 	return (
@@ -14,13 +15,14 @@ function App() {
 				<Switch>
 					<Route exact path="/">
 						<DemoCarousel />
+						<Banner />
 						<ItemListContainer />
 					</Route>
 					<Route path="/category/:categoryId">
 						<DemoCarousel />
 						<ItemListContainer />
 					</Route>
-					<Route   path="/item/:itemId">
+					<Route path="/item/:itemId">
 						<ItemDetailContainer />
 					</Route>
 				</Switch>
