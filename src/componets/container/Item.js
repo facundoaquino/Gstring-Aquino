@@ -4,7 +4,11 @@ import { useSpring, animated } from 'react-spring'
 import { Link, useLocation } from 'react-router-dom'
 import closeMenu from '../../helpers/closeMenu'
 const Item = ({ title, price, pictureUrl, stock, style, id }) => {
-	const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, config: { duration: 500 } })
+	const props = useSpring({
+		to: { opacity: 1, translateX: 0 },
+		from: { opacity: 0, translateX: 10 },
+		config: { duration: 500 },
+	})
 	const { pathname } = useLocation()
 	// console.log(id)
 	return (

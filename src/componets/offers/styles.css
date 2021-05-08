@@ -1,0 +1,31 @@
+.offers__container {
+	margin: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.offer__container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+.offers__imgContainer {
+	max-width: 150px;
+	margin: 10px;
+}
+
+.offers__imgContainer > img {
+	width: 100%;
+}
+
+.offers__description {
+	color: #666;
+	font-size: 21px;
+}
+.offers__truck {
+	color: #16a4cd;
+	font-size: 70px;
+}
