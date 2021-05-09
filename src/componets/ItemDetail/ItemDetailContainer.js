@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
 	const [data, setProduct] = useState({ product: [], loading: true })
 	const { product, loading } = data
 	const { itemId } = useParams()
-	// console.log(itemId)
+
 	useEffect(() => {
 		setProduct({ loading: true })
 		getItem(itemId).then((res) => setProduct({ product: res, loading: false }))

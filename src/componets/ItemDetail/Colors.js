@@ -2,8 +2,6 @@ import React from 'react'
 import handleActualColor from '../../helpers/handleActualColor'
 
 const Colors = ({ images, setImage }) => {
-	// console.log(images)
-
 	const handlePicture = (url) => {
 		setImage(url)
 	}

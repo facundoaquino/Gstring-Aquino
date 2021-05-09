@@ -86,6 +86,21 @@
 	color: black;
 	width: 100%;
 }
+.details__cartState {
+	max-width: 300px;
+	height: 82px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.details__small {
+	color: #666;
+	font-size: 12px;
+	cursor: pointer;
+}
+.details__small:hover {
+	color: rgb(32, 31, 31);
+}
 
 @media screen and (max-width: 1024px) {
 	.productDetail__container {

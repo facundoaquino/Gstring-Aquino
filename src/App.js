@@ -8,10 +8,12 @@ import ItemDetailContainer from './componets/ItemDetail/ItemDetailContainer'
 import Banner from './componets/banner/Banner'
 
 import Offers from './componets/offers/Offers'
+import { CartProvider } from './context/CartContext'
+import CartContainer from './componets/cart/CartContainer'
 
 function App() {
 	return (
-		<>
+		<CartProvider>
 			<Router>
 				<Navabar />
 
@@ -29,9 +31,12 @@ function App() {
 					<Route path="/item/:itemId">
 						<ItemDetailContainer />
 					</Route>
+					<Route path="/cart">
+						<CartContainer />
+					</Route>
 				</Switch>
 			</Router>
-		</>
+		</CartProvider>
 	)
 }
 

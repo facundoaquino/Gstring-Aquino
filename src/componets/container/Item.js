@@ -10,7 +10,7 @@ const Item = ({ title, price, pictureUrl, stock, style, id }) => {
 		config: { duration: 500 },
 	})
 	const { pathname } = useLocation()
-	// console.log(id)
+
 	return (
 		<animated.div style={props} className={`product__card ${style}`}>
 			<div className="product__imgContainer">
@@ -22,7 +22,7 @@ const Item = ({ title, price, pictureUrl, stock, style, id }) => {
 				<p className="product__title">{title}</p>
 				<p className="product__price">${price}</p>
 			</div>
-			<ItemCount stock={stock} initial={1} product={title} />
+			<ItemCount stock={stock} initial={1} product={{ title, price, pictureUrl, stock, id }} />
 			{!stock && <p className="product__noStock">SIN STOCK</p>}
 		</animated.div>
 	)

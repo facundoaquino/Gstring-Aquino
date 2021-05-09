@@ -7,10 +7,10 @@ import ampli from './../assets/images/ampli.jpg'
 import gib from './../assets/images/gib.jpg'
 import gibacustic from './../assets/images/gibacustic.jpg'
 import gibanez from './../assets/images/gibanez.jpg'
-import { v4 as uuidv4 } from 'uuid'
+
 const products = [
 	{
-		id: uuidv4(),
+		id: 1,
 		title: 'Gibson LesPaul',
 		category: 'guitar',
 		description:
@@ -20,7 +20,7 @@ const products = [
 		stock: 10,
 	},
 	{
-		id: uuidv4(),
+		id: 2,
 		title: 'Telecaster American',
 		category: 'guitar',
 		description:
@@ -33,7 +33,7 @@ const products = [
 		stock: 15,
 	},
 	{
-		id: uuidv4(),
+		id: 3,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -43,7 +43,7 @@ const products = [
 		stock: 0,
 	},
 	{
-		id: uuidv4(),
+		id: 4,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -56,7 +56,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 5,
 		title: 'Amplificador  Peavey Envoy 110 40 Rms',
 		category: 'amplificadores',
 		description:
@@ -66,7 +66,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 6,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -79,7 +79,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 7,
 		title: 'Gibson Acustic J-45 ',
 		description:
 			'Como modelo insignia de Gibson Custom Shop, la Les Paul Custom está a la altura de los altos estándares establecidos por su arquetipo de la década de 1950 mientras evoluciona a un nivel de tono y rendimiento más adecuado a las demandas musicales de hoy. Debajo de las capas de sus detalles de "esmoquin" se encuentra la voz nítida y vanguardista de un juego de humbucker 490/498 combinado, un diapasón de ébano sólido, una espiga de mástil larga para un sustain máximo y una tapa de arce de dos piezas sobre un cuerpo de caoba sólido que agrega la cantidad perfecta de mordida sónica para todo, desde jazz hasta hard rock. Suena tan bien como parece, ¡y se ve tan bien como suena!',
@@ -89,7 +89,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 8,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -99,7 +99,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 9,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -109,7 +109,7 @@ const products = [
 		stock: 5,
 	},
 	{
-		id: uuidv4(),
+		id: 10,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -119,7 +119,7 @@ const products = [
 		stock: 0,
 	},
 	{
-		id: uuidv4(),
+		id: 11,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -129,7 +129,7 @@ const products = [
 		stock: 3,
 	},
 	{
-		id: uuidv4(),
+		id: 12,
 		title: 'Amplificador  Peavey Envoy 110 40 Rms',
 		category: 'amplificadores',
 		description:
@@ -139,7 +139,7 @@ const products = [
 		stock: 2,
 	},
 	{
-		id: uuidv4(),
+		id: 13,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -149,7 +149,7 @@ const products = [
 		stock: 3,
 	},
 	{
-		id: uuidv4(),
+		id: 14,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -159,7 +159,7 @@ const products = [
 		stock: 7,
 	},
 	{
-		id: uuidv4(),
+		id: 15,
 		title: 'Ibanez Js100',
 		category: 'guitar',
 		description:
@@ -169,7 +169,7 @@ const products = [
 		stock: 0,
 	},
 	{
-		id: uuidv4(),
+		id: 16,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -179,7 +179,7 @@ const products = [
 		stock: 0,
 	},
 	{
-		id: uuidv4(),
+		id: 17,
 		title: 'Telecaster American',
 		category: 'guitar',
 		description:
@@ -192,7 +192,7 @@ const products = [
 		stock: 15,
 	},
 	{
-		id: uuidv4(),
+		id: 18,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -202,7 +202,7 @@ const products = [
 		stock: 0,
 	},
 	{
-		id: uuidv4(),
+		id: 19,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -212,7 +212,7 @@ const products = [
 		stock: 3,
 	},
 	{
-		id: uuidv4(),
+		id: 20,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -222,7 +222,7 @@ const products = [
 		stock: 3,
 	},
 	{
-		id: uuidv4(),
+		id: 21,
 		title: 'Amplificador  Peavey Envoy 110 40 Rms',
 		category: 'amplificadores',
 		description:
@@ -232,7 +232,7 @@ const products = [
 		stock: 9,
 	},
 	{
-		id: uuidv4(),
+		id: 22,
 		title: 'Pua Ernie Ball',
 		description:
 			'Las puas Ernie Ball Prodigy cuentan con un material delrin altamente duradero para una superficie antideslizante más segura. El borde biselado mecanizado y las puntas afiladas permiten menos arrastre, mayor articulación y control preciso durante la reproducción. Esta forma de escudo grande de 1,5 mm es nueva para 2019',
@@ -242,7 +242,7 @@ const products = [
 		stock: 3,
 	},
 	{
-		id: uuidv4(),
+		id: 23,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -252,7 +252,7 @@ const products = [
 		stock: 2,
 	},
 	{
-		id: uuidv4(),
+		id: 24,
 		title: 'Fender Stratocaster',
 		category: 'guitar',
 		description:
@@ -262,7 +262,7 @@ const products = [
 		stock: 2,
 	},
 	{
-		id: uuidv4(),
+		id: 25,
 		title: 'Amplificador  Peavey Envoy 110 40 Rms',
 		category: 'amplificadores',
 		description:
