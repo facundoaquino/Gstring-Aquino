@@ -7,6 +7,7 @@ import pauseAudio from '../../helpers/pauseAudio'
 import showMenu from '../../helpers/showMenu'
 import closeMenu from '../../helpers/closeMenu'
 import { navbarCategories } from '../../data/navbarCategories'
+import SearchForm from './SearchForm'
 
 const Navabar = () => {
 	const handlePlayer = () => {
@@ -39,10 +40,8 @@ const Navabar = () => {
 					</NavLink>
 				))}
 			</ul>
-			<form className="navbar__form navbar--none">
-				<input className="navbar__search" placeholder="Buscar" type="text" />
-				<i className="fas fa-search  navbar__icon-search"></i>
-			</form>
+			<SearchForm />
+
 			<CartWidget />
 		</nav>
 	)

@@ -1,0 +1,18 @@
+.results__container {
+	position: absolute;
+
+	left: 0;
+	background-color: black;
+	right: 0;
+	/* padding: 10px; */
+}
+.results__title {
+	padding: 8px;
+	border-bottom: 1px solid #e43f5a;
+	cursor: pointer;
+	color: #666;
+}
+
+.results__title:hover {
+	color: rgb(158, 154, 154);
+}

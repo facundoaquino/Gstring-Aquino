@@ -165,6 +165,7 @@ a {
 	.navbar__form {
 		margin: 5px 0;
 		width: 100%;
+		position: relative;
 	}
 	.navbar__search {
 		font-size: 12px;
