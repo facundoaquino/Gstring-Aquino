@@ -38,6 +38,14 @@
 
 	margin-top: 10px;
 }
+.cart__backButton {
+	margin-top: 10px;
+	color: white;
+	background-color: #e43f5a;
+	cursor: pointer;
+	padding: 10px 30px;
+	font-size: 16px;
+}
 
 @media screen and (max-width: 889px) {
 	.cartItem__gridContainer > img {

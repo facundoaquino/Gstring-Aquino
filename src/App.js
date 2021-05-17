@@ -10,6 +10,7 @@ import Banner from './componets/banner/Banner'
 import Offers from './componets/offers/Offers'
 import { CartProvider } from './context/CartContext'
 import CartContainer from './componets/cart/CartContainer'
+import NotFound from './componets/notFounded/NotFound'
 
 function App() {
 	return (
@@ -24,15 +25,18 @@ function App() {
 						<Offers />
 						<ItemListContainer />
 					</Route>
-					<Route path="/category/:categoryId">
+					<Route exact path="/category/:categoryId">
 						<DemoCarousel />
 						<ItemListContainer />
 					</Route>
-					<Route path="/item/:itemId">
+					<Route exact path="/item/:itemId">
 						<ItemDetailContainer />
 					</Route>
-					<Route path="/cart">
+					<Route exact path="/cart">
 						<CartContainer />
+					</Route>
+					<Route path="*">
+						<NotFound description="Pagina no encontrada" />
 					</Route>
 				</Switch>
 			</Router>

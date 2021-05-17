@@ -32,6 +32,7 @@
 	justify-content: flex-end;
 	padding: 10px;
 	border-radius: 5px;
+	-webkit-tap-highlight-color: transparent;
 }
 .product__imgContainer {
 	overflow: hidden;

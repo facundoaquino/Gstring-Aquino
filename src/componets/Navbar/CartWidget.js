@@ -6,7 +6,7 @@ const CartWidget = () => {
 	const { cart } = useContext(CartContext)
 	return (
 		<>
-			<Link to="/cart">
+			<Link to="/cart" style={{ visibility: !cart.length ? 'hidden' : 'inherit' }}>
 				<div className="cartIcon__container">
 					<i className="fas fa-shopping-cart navbar__cart">
 						<small className="cartIcon_total">

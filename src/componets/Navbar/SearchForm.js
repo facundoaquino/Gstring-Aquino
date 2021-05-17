@@ -1,20 +1,32 @@
 import React, { useState } from 'react'
-import products from '../../data/products'
-import FormResults from './FormResults'
 
+import FormResults from './FormResults'
+import db from './../../firebase/firebase'
 const SearchForm = () => {
 	const [search, setSearch] = useState([])
 	const [showResults, setShowResults] = useState(true)
 	const [value, setValue] = useState('')
+	const itemsCollections = db.collection('items')
 	const handleSearch = (e) => {
 		const value = e.target.value.trim()
 		setValue(value)
-		const productsFounded = products
-			.filter((product) => product.title.toLowerCase().includes(value.toLowerCase()))
-			.map((p) => ({ title: p.title, id: p.id }))
-		productsFounded.length = 5
-		setShowResults(true)
-		setSearch(productsFounded)
+		if (value.length >= 2) {
+			itemsCollections.get().then((docs) => {
+				const items = []
+				docs.docs.forEach((product) => {
+					if (product.data().title.toLowerCase().includes(value.toLowerCase())) {
+						items.push({
+							id: product.id,
+							title: product.data().title,
+						})
+					}
+				})
+				items.length = 5
+
+				setShowResults(true)
+				setSearch(items)
+			})
+		}
 
 		if (!value) {
 			setSearch([])

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 import pauseAudio from '../../helpers/pauseAudio'
 import showMenu from '../../helpers/showMenu'
 import closeMenu from '../../helpers/closeMenu'
-import { navbarCategories } from '../../data/navbarCategories'
+
 import SearchForm from './SearchForm'
 
 const Navabar = () => {
@@ -26,19 +26,36 @@ const Navabar = () => {
 			</NavLink>
 			<i onClick={showMenu} className="fas fa-bars navbar__menu"></i>
 			<ul className="navbar__listItem navbar--none">
-				{navbarCategories.map(({ category }) => (
-					<NavLink
-						key={category}
-						onClick={() => {
-							handlePlayer()
-							closeMenu()
-						}}
-						activeClassName="navbar__active"
-						to={`/category/${category.toLowerCase()}`}
-					>
-						<li className="navbar__item">{category}</li>
-					</NavLink>
-				))}
+				<NavLink
+					onClick={() => {
+						handlePlayer()
+						closeMenu()
+					}}
+					activeClassName="navbar__active"
+					to={`/category/guitarras`}
+				>
+					<li className="navbar__item">Guitarras</li>
+				</NavLink>
+				<NavLink
+					onClick={() => {
+						handlePlayer()
+						closeMenu()
+					}}
+					activeClassName="navbar__active"
+					to={`/category/amplificadores`}
+				>
+					<li className="navbar__item">Amplificadores</li>
+				</NavLink>
+				<NavLink
+					onClick={() => {
+						handlePlayer()
+						closeMenu()
+					}}
+					activeClassName="navbar__active"
+					to={`/category/accesorios`}
+				>
+					<li className="navbar__item">Accesorios</li>
+				</NavLink>
 			</ul>
 			<SearchForm />
 

@@ -11,7 +11,7 @@ import ItemCount from '../container/ItemCount'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 
-const ItemDetail = ({ pictureUrl, title, description, price, category, stock, id }) => {
+const ItemDetail = ({ pictureUrl, title, description, price, categoryId, stock, id }) => {
 	const [actualImage, setActualImage] = useState(typeof pictureUrl == 'object' ? pictureUrl[0].url : pictureUrl)
 	const { isInCart, getQuantity } = useContext(CartContext)
 	const [productInCart, setProductInCart] = useState(isInCart(id))
@@ -37,7 +37,7 @@ const ItemDetail = ({ pictureUrl, title, description, price, category, stock, id
 	return (
 		<animated.div style={propsSpring} className="productDetail__container">
 			<div className="productDetail__image">
-				{window.innerWidth <= 768 || category !== 'guitar' ? (
+				{window.innerWidth <= 768 || categoryId !== 'XlGSMP3LFI52KKeFkkeA' ? (
 					<img className="detail__image" src={actualImage} alt="" />
 				) : (
 					<ReactImageZoom {...props} />

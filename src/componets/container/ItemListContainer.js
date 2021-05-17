@@ -1,28 +1,54 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
-import { getDataProducts } from '../../helpers/getDataProducts'
+import { useHistory, useParams } from 'react-router'
+
 import ItemList from './ItemList'
 import Loading from './Loading'
 import './styles/main.css'
 import db from './../../firebase/firebase'
 const ItemListContainer = () => {
+	const history = useHistory()
 	const { categoryId } = useParams()
 	const [data, setData] = useState({ products: [], loading: true })
 	const { products, loading } = data
 	useEffect(() => {
-		const items = db.collection('items')
-		items.get().then((snapShot) => {
-			const allItems = snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
-			console.log(allItems)
-			setData({ products: allItems, loading: false })
-		})
-		// getDataProducts().then((res) => setData({ products: res, loading: false }))
-	}, [])
+		if (!categoryId) {
+			const items = db.collection('items')
+			items.get().then((snapShot) => {
+				const allItems = snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
 
-	// useEffect(() => {
-	// 	setData({ loading: true })
-	// 	getDataProducts(categoryId).then((res) => setData({ products: res, loading: false }))
-	// }, [categoryId])
+				setData({ products: allItems, loading: false })
+			})
+		}
+	}, [categoryId])
+
+	useEffect(() => {
+		setData({ loading: true })
+		if (categoryId) {
+			const categorieClean = categoryId.toLowerCase()
+			const categories = db.collection('categories')
+
+			categories
+				.where('key', '==', categorieClean)
+				.get()
+				.then((snap) => {
+					const [id] = snap.docs.map((doc) => doc.id)
+					if (!id) {
+						history.push('/404')
+						return
+					}
+
+					const productsByCategorie = db.collection('items')
+
+					productsByCategorie
+						.where('categoryId', '==', id)
+						.get()
+						.then((snap) => {
+							const allItems = snap.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+							setData({ products: allItems, loading: false })
+						})
+				})
+		}
+	}, [categoryId, history])
 
 	return <main className="main__container">{loading ? <Loading /> : <ItemList products={products} />}</main>
 }
