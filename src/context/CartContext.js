@@ -5,6 +5,7 @@ export const CartContext = React.createContext()
 
 export const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([])
+	const [orderId, setOrderId] = useState(null)
 
 	const addItem = (itemCart, quantity, path) => {
 		if (!path.includes('/item')) {
@@ -30,7 +31,9 @@ export const CartProvider = ({ children }) => {
 	}
 	const clear = () => setCart([])
 	return (
-		<CartContext.Provider value={{ addItem, cart, isInCart, getQuantity, removeItem, clear }}>
+		<CartContext.Provider
+			value={{ addItem, cart, isInCart, getQuantity, removeItem, clear, setOrderId, orderId, setCart }}
+		>
 			{children}
 		</CartContext.Provider>
 	)

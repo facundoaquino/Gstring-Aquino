@@ -11,6 +11,7 @@ import Offers from './componets/offers/Offers'
 import { CartProvider } from './context/CartContext'
 import CartContainer from './componets/cart/CartContainer'
 import NotFound from './componets/notFounded/NotFound'
+import Order from './componets/order/Order'
 
 function App() {
 	return (
@@ -34,6 +35,9 @@ function App() {
 					</Route>
 					<Route exact path="/cart">
 						<CartContainer />
+					</Route>
+					<Route exact path="/order">
+						<Order />
 					</Route>
 					<Route path="*">
 						<NotFound description="Pagina no encontrada" />

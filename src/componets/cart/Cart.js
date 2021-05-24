@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import FinishCart from './FinishCart'
 
 export const Cart = ({ products, removeItem, clear }) => {
+	const [trigger, setTrigger] = useState(false)
+
 	return (
 		<>
 			{products.map((product) => (
@@ -23,9 +27,14 @@ export const Cart = ({ products, removeItem, clear }) => {
 				</div>
 			))}
 			<div className="cart__details">
-				<p onClick={clear} className="cartItem__delete cartItem__clear">
-					Vaciar Carrito <i className="fas fa-trash-alt"></i>
-				</p>
+				<button
+					onClick={() => {
+						setTrigger(true)
+					}}
+					className="form__button"
+				>
+					Terminar Compra
+				</button>
 				<p className="cart__total">
 					Total: $
 					{products.reduce((acc, product) => {
@@ -33,7 +42,11 @@ export const Cart = ({ products, removeItem, clear }) => {
 						return acc
 					}, 0)}
 				</p>
+				<p onClick={clear} className="cartItem__delete cartItem__clear">
+					Vaciar Carrito <i className="fas fa-trash-alt"></i>
+				</p>
 			</div>
+			{trigger && <FinishCart products={products} setTrigger={setTrigger} />}
 		</>
 	)
 }

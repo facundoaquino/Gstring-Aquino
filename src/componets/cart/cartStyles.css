@@ -61,4 +61,12 @@
 		gap: 5px;
 		font-size: 14px;
 	}
+	.cart__details {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.cart__details > p {
+		margin: 8px 0;
+	}
 }
