@@ -16,7 +16,7 @@ class DemoCarousel extends Component {
 		return (
 			<>
 				<Carousel
-					className="carr__display d-none"
+					className="carr__display  "
 					showThumbs={false}
 					autoPlay={false}
 					interval={30000}
@@ -39,7 +39,8 @@ class DemoCarousel extends Component {
 					))}
 				</Carousel>
 				<h3 className="carr__chevron">
-					Prueba de sonido <i onClick={this.handleDisplay} className="carr__chevron-icon fas fa-chevron-down"></i>
+					Prueba de sonido{' '}
+					<i onClick={this.handleDisplay} className="carr__chevron-icon fas fa-chevron-down"></i>
 				</h3>
 			</>
 		)
