@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Notyf } from 'notyf'
 import 'notyf/notyf.min.css'
 export const CartContext = React.createContext()
 
+const initialCart = JSON.parse(localStorage.getItem('cart')) || []
+
 export const CartProvider = ({ children }) => {
-	const [cart, setCart] = useState([])
+	const [cart, setCart] = useState(initialCart)
 	const [orderId, setOrderId] = useState(null)
+	useEffect(() => {
+		localStorage.setItem('cart', JSON.stringify(cart))
+	}, [cart])
 
 	const addItem = (itemCart, quantity, path) => {
 		if (!path.includes('/item')) {

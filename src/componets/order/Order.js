@@ -8,12 +8,12 @@ const Order = () => {
 	const { orderId, setOrderId } = useContext(CartContext)
 	const [products, setProduct] = useState([])
 	const [total, setTotal] = useState('')
-	const { setCart } = useContext(CartContext)
+	const { clear } = useContext(CartContext)
 	const [loading, setLoading] = useState(true)
 	const history = useHistory()
 
 	useEffect(() => {
-		setCart([])
+		clear()
 		const getData = async () => {
 			const ordersCollection = db.collection('orders')
 			const orderDoc = ordersCollection.doc(orderId)
@@ -43,7 +43,7 @@ const Order = () => {
 		return () => {
 			setOrderId(null)
 		}
-	}, [orderId, setOrderId, setCart, history])
+	}, [orderId, setOrderId, clear, history])
 
 	return (
 		<div className="order__container">
