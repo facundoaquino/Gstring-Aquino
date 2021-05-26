@@ -33,6 +33,11 @@ const ItemDetail = ({ pictureUrl, title, description, price, categoryId, stock, 
 	const handleAddCart = () => {
 		setProductInCart(false)
 	}
+	useEffect(() => {
+		setTimeout(() => {
+			window.scroll(0, 1)
+		}, 500)
+	}, [])
 
 	return (
 		<animated.div style={propsSpring} className="productDetail__container">
