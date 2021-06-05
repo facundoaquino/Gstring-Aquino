@@ -14,24 +14,24 @@ Abrir [http://localhost:3000](http://localhost:3000)
 
 -   ## Navagacion general
 
-    ![](https://res.cloudinary.com/doad24viw/image/upload/v1622931680/wcuj6m3ej8a0rvo0jnbc.gif)
+    ![](./gif/g1.gif)
     [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622931680/wcuj6m3ej8a0rvo0jnbc.gif)
 
 -   ## Detalle producto
 
-    ![](https://res.cloudinary.com/doad24viw/image/upload/v1622931811/nru5pxmca7zyzobbyrbw.gif)
+    ![](./gif/g2.gif)
 
     [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622931811/nru5pxmca7zyzobbyrbw.gif)
 
 -   ## Carrito
 
-    ![](https://res.cloudinary.com/doad24viw/image/upload/v1622932044/qz1v8uzxx1g4kurz4rre.gif)
+    ![](./gif/g3.gif)
 
-[gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622932044/qz1v8uzxx1g4kurz4rre.gif)
+    [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622932044/qz1v8uzxx1g4kurz4rre.gif)
 
 -   ## Terminar Compra
 
-    ![](https://res.cloudinary.com/doad24viw/image/upload/v1622932416/nj9nq87guskvxbd0zsfa.gif)
+    ![](./gif/g4.gif)
 
     [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622932416/nj9nq87guskvxbd0zsfa.gif)
 
