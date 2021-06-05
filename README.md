@@ -15,25 +15,18 @@ Abrir [http://localhost:3000](http://localhost:3000)
 -   ## Navagacion general
 
     ![](./gif/g1.gif)
-    [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622931680/wcuj6m3ej8a0rvo0jnbc.gif)
 
 -   ## Detalle producto
 
     ![](./gif/g2.gif)
 
-    [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622931811/nru5pxmca7zyzobbyrbw.gif)
-
 -   ## Carrito
 
     ![](./gif/g3.gif)
 
-    [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622932044/qz1v8uzxx1g4kurz4rre.gif)
-
 -   ## Terminar Compra
 
     ![](./gif/g4.gif)
-
-    [gif ](https://res.cloudinary.com/doad24viw/image/upload/v1622932416/nj9nq87guskvxbd0zsfa.gif)
 
 -   ## Not Found
 
@@ -41,7 +34,7 @@ Abrir [http://localhost:3000](http://localhost:3000)
 
 -   ## Carrito persistente
 
-![](https://res.cloudinary.com/doad24viw/image/upload/v1622932611/rxyjkxdtwmqoxh1bin5g.gif)
+    ![](https://res.cloudinary.com/doad24viw/image/upload/v1622932611/rxyjkxdtwmqoxh1bin5g.gif)
 
 # Librerias Extras :
 
